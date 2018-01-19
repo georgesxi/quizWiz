@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Greek Mythology Quiz</string>
+
+    <!--Header text for the list of toppings [CHAR LIMIT=20 ] -->
+    <string name="answer1">Write your answer here!</string>
+
+    <!-- Question 1 [ONLY NUMBER , CHAR LIMIT=2 ] -->
+    <string name="q1">How many labours were performed by Hercules?</string>
+
+
+    !-- Question 2 [ONLY NUMBER , CHAR LIMIT=2 ] -->
+    <string name="q2">How many gods live on mount Olympus?</string>
+    <string name="answer2">Write your answer here!</string>
+
+    !-- Question 3 [MULTIPLE CHOICE] -->
+    <string name="q3">Which of the following items were associated with Hera?</string>
+    <string name="answer3a">Pomegranate</string>
+    <string name="answer3b">Peacock</string>
+    <string name="answer3c">Scepter</string>
+    <string name="answer3d">Bear</string>
+
+    !-- Question 4 [MULTIPLE CHOICE] -->
+    <string name="q4">Which of the following items were associated with Hercules?</string>
+    <string name="answer4a">Club</string>
+    <string name="answer4b">Lion</string>
+    <string name="answer4c">Winged Sandals</string>
+    <string name="answer4d">Bow and Arrows</string>
+
+    !-- Question 5 [MULTIPLE CHOICE] -->
+    <string name="q5">Who was a hero of the Trojan War and king of Salamis?</string>
+    <string name="answer5a">Bellerophon</string>
+    <string name="answer5b">Ajax the Great</string>
+    <string name="answer5c">Icarus</string>
+    <string name="answer5d">Meleager</string>
+
+
+
+
+
+</resources>
