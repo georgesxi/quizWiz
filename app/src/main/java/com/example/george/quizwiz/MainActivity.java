@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     public void submit(View view) {
         int secBoxText1 = -1;
         int firstBoxText1 = -1;
+        String heroName = "";
 
         //Question 1
         //
@@ -98,22 +99,26 @@ public class MainActivity extends AppCompatActivity {
 
         RadioGroup correct5 = (RadioGroup) findViewById(R.id.radio);
         int q5a = correct5.getCheckedRadioButtonId();
-        if (q5a) {
+        if (q5a == -1) {
+
+            //Do nothing a toast will be displayed
+
+        } else {
             RadioButton button = (RadioButton) findViewById(q5a);
-            String heroName = button.getText().toString();
-            //  String heroName1 = heroName.toString();
+            heroName = button.getText().toString();
             Log.v("test", "this is " + q5a + "test" + heroName);
         }
         //End of Q5
 
 
-        if (firstBoxText1 == -1 || secBoxText1 == -1 || (!(q3Box1 && q3Box2 && q3Box3 && q3Box4)) || (!(q4Box1 && q4Box2 && q4Box3 && q3Box4))) {
+        if (firstBoxText1 == -1 || secBoxText1 == -1 || q5a == -1) {
             //Don't run the results function if an answer is empty.
             // A Toast will be displayed informing the user
-            Toast.makeText(this, "Thistoast", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please answer all questions", Toast.LENGTH_SHORT).show();
 
         } else {
-            String results = evaluateAnswers(firstBoxText1, secBoxText1, q3Box1, q3Box2, q3Box3, q3Box4, q4Box1, q4Box2, q4Box3, q4Box4, heroName);
+            String results = evaluateAnswers(firstBoxText1, secBoxText1, q3Box1, q3Box2, q3Box3, q3Box4, q4Box1, q4Box2,
+                    q4Box3, q4Box4, heroName);
             Toast.makeText(this, results, Toast.LENGTH_SHORT).show();
 
         }
