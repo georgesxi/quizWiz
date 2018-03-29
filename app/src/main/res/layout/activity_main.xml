@@ -7,15 +7,26 @@
     tools:context="com.example.george.quizwiz.MainActivity">
 
     <Button
+        android:id="@+id/start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:onClick="startQuiz"
+    android:text="@string/start_button"
+    android:textColor="@android:color/white"
+    android:theme="@style/MyButton"
+    />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:onClick="startQuiz"
-        android:text="Start Quiz"
+        android:layout_below="@id/start"
+        android:onClick="exit"
+        android:text="@string/exit_button"
         android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
         android:theme="@style/MyButton"
 
         />
-
 
 </RelativeLayout>

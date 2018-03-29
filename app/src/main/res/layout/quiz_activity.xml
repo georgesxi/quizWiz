@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="16dp"
-                android:text="Greek Mythology Quiz"
+                android:text="@string/app_name"
                 android:textColor="@color/colorAccent"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="Question 1"
+            android:text="@string/q1Title"
             android:textColor="@color/colorAccent"
             android:textSize="16sp" />
 
@@ -84,7 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="Question 2"
+            android:text="@string/q2Title"
             android:textColor="@color/colorAccent"
             android:textSize="16sp" />
 
@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="Question 3"
+            android:text="@string/q3Title"
             android:textColor="@color/colorAccent"
             android:textSize="16sp" />
 
@@ -131,7 +131,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-
             android:text="@string/answer3a" />
 
         <CheckBox
@@ -148,7 +147,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-
             android:text="@string/answer3c" />
 
         <CheckBox
@@ -157,7 +155,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-
             android:text="@string/answer3d" />
 
         <!--Question4-->
@@ -167,7 +164,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="Question 4"
+            android:text="@string/q4Title"
             android:textColor="@color/colorAccent"
             android:textSize="16sp" />
 
@@ -182,7 +179,6 @@
 
         <CheckBox
             android:id="@+id/q4a"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -191,7 +187,6 @@
 
         <CheckBox
             android:id="@+id/q4b"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -221,7 +216,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="Question 5"
+            android:text="@string/q5Title"
             android:textColor="@color/colorAccent"
             android:textSize="16sp" />
 
@@ -235,7 +230,7 @@
             android:textSize="16sp" />
 
         <RadioGroup
-            android:id="@+id/radio"
+            android:id="@+id/q5_radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -275,14 +270,6 @@
             android:onClick="submit"
             android:text="Submit"
             android:textColor="@android:color/white"
-            android:theme="@style/MyButton"/>
-
-
-        <!--Question6-->
-        <!--Question7-->
-        <!--Question8-->
-        <!--Question9-->
-        <!--Question10-->
+            android:theme="@style/MyButton" />
     </LinearLayout>
-
 </ScrollView>
